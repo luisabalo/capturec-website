@@ -2,40 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Wedding Photo & Video</title>
+  <title>CaptuREC Studio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     :root { --w: 1200px; }
     body { font-family: Arial, sans-serif; margin: 0; background: #fafafa; color: #333; }
-    header { text-align: center; padding: 32px 16px; }
-    h1 { margin: 0 0 8px; }
-    p.lead { margin: 0; opacity: .8; }
+
+    header {
+      text-align: center;
+      padding: 40px 16px;
+    }
+
+    header img.logo {
+      width: 500px; /* Ajusta según quieras que sea el logo */
+      height: auto;
+      border-radius: 12px; /* opcional */
+    }
+
+    .contact {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .coming-soon {
+      margin-top: 8px;
+      font-size: 16px;
+      font-weight: normal;
+      opacity: 0.8;
+    }
+
     .gallery {
       max-width: var(--w);
-      margin: 0 auto; padding: 24px 12px;
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px;
+      margin: 0 auto;
+      padding: 24px 12px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
     }
-    .card { background:#fff; border-radius: 12px; overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0,0,0,.08); }
-    .card img { width: 100%; height: auto; display: block; }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,.08);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
     footer { text-align: center; padding: 24px; }
     a { color: #0a66c2; font-weight: 600; text-decoration: none; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Wedding Photo & Video</h1>
-    <p class="lead">Timeless, candid moments — photography & filmmaking.</p>
+    <img src="photos/Artboard2.png" alt="CaptuREC Logo" class="logo">
+
+    <div class="contact">
+      Contact us: capturec [dot] studio [at] gmail [dot] com
+    </div>
+    <div class="coming-soon">
+      We're working on the website! Stay tuned.
+    </div>
   </header>
 
   <main class="gallery">
-    <div class="card"><img src="photos/20250711_Sandra-y-Santi-20.png" alt="Wedding photo 1"></div>
-    <div class="card"><img src="photos/20250711_Sandra-y-Santi-31.png" alt="Wedding photo 2"></div>
+    <div class="card"><img src="photos/capturec-website-1.png" alt="Wedding photo 1"></div>
+    <div class="card"><img src="photos/capturec-website-2.png" alt="Wedding photo 2"></div>
     <!-- Add more photos later by duplicating a card -->
   </main>
 
   <footer>
-    <p>Contact us: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    <p></p>
   </footer>
 </body>
 </html>
